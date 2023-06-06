@@ -39,3 +39,5 @@ The About Me page is simple and features only a photo and some text. The style o
 ### Gallery
 
 The gallery consists of a table with one row and two cells: one to hold the navigation links, and the other to hold the divs that have the photo galleries. Users can click an option in the left-hand navigation bar to see only photos related to a specific shoot. Clicking on any of the links calls functions that either show or hide the appropriate divs.
+
+I based my galler on a w3schools tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
