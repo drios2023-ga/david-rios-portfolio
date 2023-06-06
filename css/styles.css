@@ -191,6 +191,21 @@ a:active {
     background-color: #A5A5A5;
     color: black;
   }
+
+
+/* ----------------------------------------
+-----------gallery photo stuff ------------
+---------------------------------------- */
+  .gallery{
+    display: inline-block;
+  }
+  .imageClass{
+    margin:5px;
+  }
+  .toggleLink{
+
+    margin: auto;
+  }
   
 /* hamburger links - works with function */
 
