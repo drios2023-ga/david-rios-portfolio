@@ -1,6 +1,9 @@
 
 //create header and append
 //to the top of the body element
+
+$(()=>{
+
 $header = $('<header>');
 $header.attr('id', "nav-header")
 $('#page-content').prepend($header);
@@ -79,10 +82,13 @@ $gallery.append($agallery);
 
 
 
+$try = $('<div>');
 
 $divhamnav = $('<div>');
 $divhamnav.attr('class','hamburger-nav');
 $('body').prepend($divhamnav);
+
+$('body').prepend($try);
 
 $divhamlinks = $('<div>');
 $divhamlinks.attr('id','hamburger-links');
@@ -109,9 +115,12 @@ $hamburgerIcon.attr('id','hamburgerIcon');
 $hamburgerIcon.attr('href','javascript:void(0);');
 $hamburgerIcon.attr('class','icon');
 $hamburgerIcon.attr('onclick','toggleHamburger()');
-$divhamnav.append($hamburgerIcon);
+$try.append($hamburgerIcon);
+
+
 
 $ifabars = $('<i>');
 $ifabars.attr('class','fa fa-bars');
 $hamburgerIcon.append($ifabars);
 
+})

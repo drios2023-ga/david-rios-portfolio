@@ -152,7 +152,7 @@ a:active {
 -----------hamburger menu stuff------------
 ---------------------------------------- */
 
-.mobile-container {
+/* .mobile-container {
     max-width: 480px;
     margin: auto;
     background-color: #555;
@@ -160,12 +160,12 @@ a:active {
     color: white;
     border-radius: 10px;
 
-  }
+  } */
  
 /* controls .hamburger-nav div style */
 
   .hamburger-nav {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #cccccc;
     position: relative;  }
   
@@ -179,18 +179,26 @@ a:active {
     display: block;
   }
   
-  .hamburger-nav a.icon {
+ /* a.icon {
     background: #F2F2F2;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
+  }  */
   
   .hamburger-nav a:hover {
     background-color: #A5A5A5;
     color: black;
   }
+
+
+
+
+
+
+
+  
 
 
 /* ----------------------------------------
@@ -211,7 +219,7 @@ a:active {
 -- hamburger links - works with function --
 ---------------------------------------- */
 
-  .topnav #hamburger-links {
+.hamburger-nav #hamburger-links {
     display: none;
   }
 
@@ -221,7 +229,7 @@ a:active {
 ---------------------------------------- */  
 /*w3schools*/
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     #top-navigation {
       display: none;
 
