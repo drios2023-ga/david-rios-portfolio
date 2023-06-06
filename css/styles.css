@@ -1,0 +1,207 @@
+
+body {
+    font-family: 'Kanit', sans-serif !important;
+}
+
+/* ----------------------------------------
+---header related style content------------
+---------------------------------------- */
+/* https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+
+
+header{
+    text-align: center;
+    display: inline;
+    height:64px;  
+}
+
+#topheader {
+    font-size: 64px;
+    margin: 15px 15px 0px 15px;
+    display: inline;
+    text-align: center;
+    height: auto;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+#title-paragraph{
+    margin: 0px;
+    padding: 0px 0px 18px 0px;
+}
+
+#title-link{
+    text-align: center;
+    display: inline;
+}
+
+#top-navigation{
+    margin: 0px;
+    padding: 0px;
+    height: 65px;
+    width: auto;
+    text-align: center; 
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+}
+
+#output{
+    margin: 20px;
+
+}
+
+
+
+
+.nav-link{
+    display: inline;
+    padding: 15px;
+    border-right: 1px gray;
+    width: auto;
+    font-size: 24px;
+    vertical-align: top;    
+}
+
+li {
+    display: inline;
+    padding: 32px;
+    border-right: 1px gray;
+    width: auto;
+    font-size: 24px;
+  }
+
+/* ----------------------------------------
+---footer related style content------------
+---------------------------------------- */
+#page-container {
+    position:relative;
+    min-height: 100vh;
+}
+
+#page-content{
+    padding-bottom: 2.5rem;
+    
+}
+
+/* #page-footer{
+    position:absolute;
+    bottom: 0;
+    margin: 32px;
+    width: 100%;
+    height:2.5rem;
+} */
+
+
+
+/* ----------------------------------------
+-----------header link style------------
+---------------------------------------- */
+a:link{
+    color:#595959;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#595959;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#A5A5A5;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F2F2F2;
+    background-color: transparent;
+    text-decoration: none;
+ }
+
+/* ----------------------------------------
+-----------page card style------------
+---------------------------------------- */
+/* https://www.w3schools.com/howto/howto_css_cards.asp */
+
+.card{
+    box-shadow: 0px 4px 8px 0 #7F7F7F;
+    transition: 0.3s;
+    border-radius:5px;   
+    float:left;
+    margin: 10px;
+}
+
+.card-content{
+    padding: 15px;
+    display:inline;
+    width: 100%;
+}
+
+.card-line-item{
+    margin: 5px;
+
+}
+
+
+/* ----------------------------------------
+-----------hamburger menu stuff------------
+---------------------------------------- */
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+
+  }
+ 
+/* controls .hamburger-nav div style */
+
+  .hamburger-nav {
+    overflow: hidden;
+    background-color: #cccccc;
+    position: relative;  }
+  
+/* controls hamburger button style */
+  
+  .hamburger-nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .hamburger-nav a.icon {
+    background: #F2F2F2;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .hamburger-nav a:hover {
+    background-color: #A5A5A5;
+    color: black;
+  }
+  
+/* hamburger links - works with function */
+
+  .topnav #hamburger-links {
+    display: none;
+  }
+
+/*w3schools*/
+@media screen and (max-width: 480px) {
+    #top-navigation {
+      display: none;
+
+    }
+} 
