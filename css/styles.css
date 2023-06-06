@@ -206,14 +206,21 @@ a:active {
 
     margin: auto;
   }
-  
-/* hamburger links - works with function */
+
+/* ----------------------------------------
+-- hamburger links - works with function --
+---------------------------------------- */
 
   .topnav #hamburger-links {
     display: none;
   }
 
+
+/* ----------------------------------------
+----------- media function for  -----------
+---------------------------------------- */  
 /*w3schools*/
+/* https://www.w3schools.com/css/css3_mediaqueries.asp */
 @media screen and (max-width: 480px) {
     #top-navigation {
       display: none;

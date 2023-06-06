@@ -17,21 +17,21 @@ function toggleHamburger() {
   }
 
   function toggleConsul(){
-    console.log("toggled consul");
+    //console.log("toggled consul");
     document.getElementById("consulcup").style.display="inline-block";
     document.getElementById("saltlake").style.display="none";
     document.getElementById("hawaii").style.display="none";   
   }
 
   function toggleUSSumoOpen(){
-    console.log("toggled salt lake");    
+    //console.log("toggled salt lake");    
     document.getElementById("consulcup").style.display="none";
     document.getElementById("saltlake").style.display="inline-block";
     document.getElementById("hawaii").style.display="none"; 
 
   }
   function toggleHawaii(){
-    console.log("toggled hawaii");    
+    //console.log("toggled hawaii");    
     document.getElementById("consulcup").style.display="none";
     document.getElementById("saltlake").style.display="none";
     document.getElementById("hawaii").style.display="inline-block"; 
