@@ -130,12 +130,14 @@ a:active {
 
  .rikishitable{
   border: 1px solid black;
-  width: 500px;
+  max-width: 500px;
   width: 100%;
-
 }
 
-
+.rikishitable td{
+  border: 1px solid black;
+  width: 250px;
+}
 
 
 /* ----------------------------------------
