@@ -44,7 +44,12 @@ $div.append($ul);
 // $home.attr('class','nav-link');
 // $ul.append($home);
 
-//Resume list item
+//resume list item
+$resume = $('<li>');
+$resume.attr('class','nav-link');
+$ul.append($resume);
+
+//portfolio list item
 $portfolio = $('<li>');
 $portfolio.attr('class','nav-link');
 $ul.append($portfolio);
@@ -60,17 +65,17 @@ $gallery.attr('class','nav-link');
 $ul.append($gallery);
 
 //history list item
-$history = $('<li>');
-$history.attr('class','nav-link');
-$ul.append($history);
-
-// //home link
-// $ahome = $('<a>');
-// $ahome.text("Home");
-// $ahome.attr('href', '/index.html');
-// $home.append($ahome);
+$rs = $('<li>');
+$rs.attr('class','nav-link');
+$ul.append($rs);
 
 //resume link
+$aresume = $('<a>');
+$aresume.text("Resume");
+$aresume.attr('href', '/pages/resume.html');
+$resume.append($aresume);
+
+//portfolio
 $aportfolio = $('<a>');
 $aportfolio.text("Portfolio");
 $aportfolio.attr('href', '/pages/portfolio.html');
@@ -89,10 +94,10 @@ $agallery.attr('href', '/pages/gallery.html');
 $gallery.append($agallery);
 
 //history link
-$ahistory = $('<a>');
-$ahistory.text("Rikishi Search");
-$ahistory.attr('href','/pages/sumosearch.html');
-$history.append($ahistory);
+$ars = $('<a>');
+$ars.text("Rikishi Search");
+$ars.attr('href','/pages/sumosearch.html');
+$rs.append($ars);
 
 //-----------------------------------------
 //-----creates hamburger menu -------------
@@ -109,9 +114,9 @@ $divhamlinks = $('<div>');
 $divhamlinks.attr('id','hamburger-links');
 $divhamnav.append($divhamlinks);
 
-// $ahamhome = $('<a>');
-// $ahamhome.attr('href','/index.html').text('Home');
-// $divhamlinks.append($ahamhome);
+$ahamresume = $('<a>');
+$ahamresume.attr('href','/pages/resume.html').text('Resume');
+$divhamlinks.append($ahamresume);
 
 $ahamportfolio = $('<a>');
 $ahamportfolio.attr('href','/pages/portfolio.html').text('Portfolio');
