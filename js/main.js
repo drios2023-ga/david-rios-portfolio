@@ -16,22 +16,25 @@ function toggleHamburger() {
     }
   }
 
+  function toggleAll(){
+    document.getElementById("consulcup").style.display="inline-block";
+    document.getElementById("saltlake").style.display="inline-block";
+    document.getElementById("hawaii").style.display="inline-block"; 
+  }
+
   function toggleConsul(){
-    //console.log("toggled consul");
     document.getElementById("consulcup").style.display="inline-block";
     document.getElementById("saltlake").style.display="none";
     document.getElementById("hawaii").style.display="none";   
   }
 
-  function toggleUSSumoOpen(){
-    //console.log("toggled salt lake");    
+  function toggleUSSumoOpen(){    
     document.getElementById("consulcup").style.display="none";
     document.getElementById("saltlake").style.display="inline-block";
     document.getElementById("hawaii").style.display="none"; 
 
   }
-  function toggleHawaii(){
-    //console.log("toggled hawaii");    
+  function toggleHawaii(){  
     document.getElementById("consulcup").style.display="none";
     document.getElementById("saltlake").style.display="none";
     document.getElementById("hawaii").style.display="inline-block"; 

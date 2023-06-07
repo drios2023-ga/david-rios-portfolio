@@ -4,6 +4,9 @@
 
 $(()=>{
 
+//-----------------------------------------
+//-----creates header on all pages---------
+//-----------------------------------------
 $header = $('<header>');
 $header.attr('id', "nav-header")
 $('#page-content').prepend($header);
@@ -56,6 +59,11 @@ $gallery = $('<li>');
 $gallery.attr('class','nav-link');
 $ul.append($gallery);
 
+//history list item
+$history = $('<li>');
+$history.attr('class','nav-link');
+$ul.append($history);
+
 // //home link
 // $ahome = $('<a>');
 // $ahome.text("Home");
@@ -80,8 +88,15 @@ $agallery.text("Gallery");
 $agallery.attr('href', '/pages/gallery.html');
 $gallery.append($agallery);
 
+//history link
+$ahistory = $('<a>');
+$ahistory.text("Rikishi Search");
+$ahistory.attr('href','/pages/sumosearch.html');
+$history.append($ahistory);
 
-
+//-----------------------------------------
+//-----creates hamburger menu -------------
+//-----------------------------------------
 $try = $('<div>');
 
 $divhamnav = $('<div>');
@@ -108,6 +123,10 @@ $divhamlinks.append($ahamabout);
 
 $ahamgallery = $('<a>');
 $ahamgallery.attr('href','/pages/gallery.html').text('Gallery');
+$divhamlinks.append($ahamgallery);
+
+$ahamgallery = $('<a>');
+$ahamgallery.attr('href','/pages/sumosearch.html').text('Rikishi Search');
 $divhamlinks.append($ahamgallery);
 
 $hamburgerIcon = $('<a>');

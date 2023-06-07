@@ -123,6 +123,21 @@ a:active {
     text-decoration: none;
  }
 
+
+/* ----------------------------------------
+--------sumo search table style------------
+---------------------------------------- */
+
+ .rikishitable{
+  border: 1px solid black;
+  width: 500px;
+  width: 100%;
+
+}
+
+
+
+
 /* ----------------------------------------
 -----------page card style------------
 ---------------------------------------- */
@@ -144,7 +159,8 @@ a:active {
 
 .card-line-item{
     margin: 5px;
-
+    font-size: large;
+    font-weight: bold;
 }
 
 
@@ -229,9 +245,20 @@ a:active {
 ---------------------------------------- */  
 /*w3schools*/
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
     #top-navigation {
       display: none;
-
     }
+    #webpage{
+      display: none;
+    }
+    #mobile{
+      display:inline-block;
+    }
+} 
+@media screen and (min-width: 541px) {
+
+  #mobile{
+    display:none;
+  }
 } 

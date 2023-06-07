@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">     
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" charset="utf-8"></script>
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/pageheader.js"></script>  
+    <script defer src="/js/sumosearch.js"></script>    
+    <link rel="stylesheet" href="/css/styles.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div id="page-container">
+        <div id="page-content" style="margin: 32px;">
+            <div id="search">
+                <!-- <h1 align="center">Rikishi (Sumo Wrestler) Search</h1> -->
+                <p align="center">This page enables you to search for information about professional sumo wrestlers
+                    in Japan. For example, enter 'Terunofuji' in the search bar and press the 'by Shikona (EN) button'.
+                </p>
+            </div>
+            <div id="input">
+            <table align="center">
+                <tr>
+                    <td>
+                        <input id="shikonaInput">
+                    </td>
+                    <td>
+                        <button type="button" onclick="fetchRikishiByShikonaEn()">by Shikona (EN)</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <button type="button" onclick="fetchRikishiByShikonaJp()">by Shikona (JP)</button>
+                    </td>
+                </tr>
+            </table>    
+            </div>
+
+            <div id="output">
+                <table align="center" class="rikishitable">
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Shikona (EN)</td>
+                        <td class="rikishitable"><p id="shikonaEn"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Shikona (JP)</td>
+                        <td class="rikishitable"><p id="shikonaJp"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Rank</td>
+                        <td class="rikishitable"><p id="currentRank"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Heya (stable)</td>
+                        <td class="rikishitable"><p id="heya"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Height</td>
+                        <td class="rikishitable"><p id="height"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Weight</td>
+                        <td class="rikishitable"><p id="weight"></p></td>
+                    </tr>
+                    <tr class="rikishitable">
+                        <td class="rikishitable">Hometown</td>
+                        <td class="rikishitable"><p id="shusshin"></p></td>
+                    </tr>        
+                </table>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
