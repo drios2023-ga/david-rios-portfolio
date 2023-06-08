@@ -25,8 +25,12 @@ The hamburger menu was based on a w3schools tutorial: https://www.w3schools.com/
 
 The media query was also based on a w3schools tutorial: https://www.w3schools.com/css/css3_mediaqueries.asp
 
-
 ## Home Page
+The slide show is based on a w3schools tutorial that demonstrated how to implement a slide show.
+
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+## Resume page
 
 The boxes presented on the page were based on a w3schools tutorial that demonstrated how to present information in the format of 3 dimensional cards. 
 
@@ -40,4 +44,9 @@ The About Me page is simple and features only a photo and some text. The style o
 
 The gallery consists of a table with one row and two cells: one to hold the navigation links, and the other to hold the divs that have the photo galleries. Users can click an option in the left-hand navigation bar to see only photos related to a specific shoot. Clicking on any of the links calls functions that either show or hide the appropriate divs.
 
-I based my galler on a w3schools tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+I based my gallery on a w3schools tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+
+### Rikishi Search page
+This page consumes data from The Sumo API, a database of professional sumo wrestlers.
+
+https://www.sumo-api.com/

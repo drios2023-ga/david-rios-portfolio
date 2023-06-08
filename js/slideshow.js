@@ -27,7 +27,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   //fetches required objects
-  let slides = document.getElementsByClassName("sumoSlides");
+  let slides = document.getElementsByClassName("sumo-slides");
   let dots = document.getElementsByClassName("dot");
 
   //if n is 4, then resets to 1 (first slide)

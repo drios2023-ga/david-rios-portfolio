@@ -14,7 +14,7 @@ $('#page-content').prepend($header);
 //create div element to
 //contain all content
 $div = $('<div>');
-$div.attr('id','topheader');
+$div.attr('id','top-header');
 
 //create paragraph element to
 //contain link
