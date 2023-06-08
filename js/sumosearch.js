@@ -97,7 +97,7 @@ function fetchRikishiByShikonaJp (){
                      document.getElementById("heya").innerText = heya;
                      document.getElementById("height").innerText = height;
                      document.getElementById("weight").innerText = weight;
-                     document.getElementsByTagName("shusshin").innerText = shusshin;
+                     document.getElementById("shusshin").innerText = shusshin;
 
                      return data.records;
                 }
