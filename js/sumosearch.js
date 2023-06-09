@@ -4,6 +4,7 @@
 
 let sumoRecords =[];
 
+//this fetches a sumo wrestler by their english ring name
 function fetchRikishiByShikonaEn (){
     fetch("https://www.sumo-api.com/api/rikishis").then(
         function(response){
@@ -58,7 +59,12 @@ function fetchRikishiByShikonaEn (){
     )  
 }
 
+// fetches sumo wrestler data by Japanese name
 function fetchRikishiByShikonaJp (){
+
+    //here I'm getting an AJAX response from the website
+    //then I generate a data variable
+    //then I assign the whole thing to my own variable
     fetch("https://www.sumo-api.com/api/rikishis").then(
         function(response){
             //console.log(response);
@@ -76,6 +82,7 @@ function fetchRikishiByShikonaJp (){
                     let weight = "";
                     let shusshin = "";
 
+                    //loop through, find object, fetch values from object 
                     for(i=0;i<sumoRecords.length;i++){
                         if (sumoRecords[i].shikonaJp === shikona){
                             sumoId = sumoRecords[i].id;
@@ -91,6 +98,8 @@ function fetchRikishiByShikonaJp (){
                             break;
                         }
                      }
+
+                     //assign values to appropriate text fields
                      document.getElementById("shikonaEn").innerText = shikonaEn;
                      document.getElementById("shikonaJp").innerText = shikonaJp;
                      document.getElementById("currentRank").innerText = currentRank;

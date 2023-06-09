@@ -39,11 +39,6 @@ $ul = $('<ul>');
 $ul.attr('id','top-navigation');
 $div.append($ul);
 
-// //home list item
-// $home = $('<li>');
-// $home.attr('class','nav-link');
-// $ul.append($home);
-
 //resume list item
 $resume = $('<li>');
 $resume.attr('class','nav-link');
@@ -64,7 +59,7 @@ $gallery = $('<li>');
 $gallery.attr('class','nav-link');
 $ul.append($gallery);
 
-//history list item
+//rikishi list item
 $rs = $('<li>');
 $rs.attr('class','nav-link');
 $ul.append($rs);
@@ -93,7 +88,7 @@ $agallery.text("Gallery");
 $agallery.attr('href', '/pages/gallery.html');
 $gallery.append($agallery);
 
-//history link
+//riskishi link
 $ars = $('<a>');
 $ars.text("Rikishi Search");
 $ars.attr('href','/pages/sumosearch.html');
@@ -102,49 +97,69 @@ $rs.append($ars);
 //-----------------------------------------
 //-----creates hamburger menu -------------
 //-----------------------------------------
-$try = $('<div>');
 
+//creates hamburger icon div
+$hicon = $('<div>');
+
+//creates and prepends  
+//hamburger nav to the body
 $divhamnav = $('<div>');
 $divhamnav.attr('class','hamburger-nav');
 $('body').prepend($divhamnav);
 
-$('body').prepend($try);
+//prepends hamburger icon div to body
+//prior to the hamburger nav so
+//it is outside and won't disappear
+$('body').prepend($hicon);
 
+//creates and appends links div to
+//the nav div
 $divhamlinks = $('<div>');
 $divhamlinks.attr('id','hamburger-links');
 $divhamnav.append($divhamlinks);
 
+//creates resume link
 $ahamresume = $('<a>');
 $ahamresume.attr('href','/pages/resume.html').text('Resume');
 $divhamlinks.append($ahamresume);
 
+//creates portfolio link
 $ahamportfolio = $('<a>');
 $ahamportfolio.attr('href','/pages/portfolio.html').text('Portfolio');
 $divhamlinks.append($ahamportfolio);
 
+//creates about link
 $ahamabout = $('<a>');
 $ahamabout.attr('href','/pages/about.html').text('About Me');
 $divhamlinks.append($ahamabout);
 
+//creates gallery link
 $ahamgallery = $('<a>');
 $ahamgallery.attr('href','/pages/gallery.html').text('Gallery');
 $divhamlinks.append($ahamgallery);
 
+//creates sumo search link
 $ahamgallery = $('<a>');
 $ahamgallery.attr('href','/pages/sumosearch.html').text('Rikishi Search');
 $divhamlinks.append($ahamgallery);
 
+//creates link and appends to the
+//hamber icon
 $hamburgerIcon = $('<a>');
 $hamburgerIcon.attr('id','hamburgerIcon');
 $hamburgerIcon.attr('href','javascript:void(0);');
 $hamburgerIcon.attr('class','icon');
 $hamburgerIcon.attr('onclick','toggleHamburger()');
-$try.append($hamburgerIcon);
+$hicon.append($hamburgerIcon);
 
-
-
+//creates the actual icon that works with cdn below from font awesome
 $ifabars = $('<i>');
 $ifabars.attr('class','fa fa-bars');
 $hamburgerIcon.append($ifabars);
+
+//    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+// integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+// referrerpolicy="no-referrer" />
+
 
 })
