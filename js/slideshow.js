@@ -47,7 +47,7 @@ function showSlides(n) {
   }
 
   //resets the dots' class name that have active 
-  //to a zero-length string
+  //to a zero-length string~
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }

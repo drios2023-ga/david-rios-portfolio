@@ -150,6 +150,19 @@ how far out it goes, and border-radius rounds the card */
     font-weight: bold;
 }
 
+.portfolio-card{
+  box-shadow: 0px 4px 8px 0 #7f7f7f;
+  transition: 0.3s;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  word-wrap: break-word;
+  list-style-type: none;
+  max-width: 200px;
+
+}
+
+
 
 /* ----------------------------------------
 -----------hamburger menu stuff------------
@@ -177,6 +190,26 @@ how far out it goes, and border-radius rounds the card */
     background-color: #A5A5A5;
     color: black;
   }  */
+
+
+/* ----------------------------------------
+-----------index page buttons------------
+---------------------------------------- */
+  .button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+
+
 
 
 /* ----------------------------------------
